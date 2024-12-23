@@ -1,6 +1,10 @@
 % A LaTeX template for MSc Thesis submissions to 
 % Politecnico di Milano (PoliMi) - School of Industrial and Information Engineering
 %
+% P. F. Antonietti, S. Bonetti, A. Gruttadauria, G. Mescolini, A. Zingaro
+%
+% Last Revision: October 2021
+%
 % Copyright 2021 Politecnico di Milano, Italy. Inc. All rights reserved
 
 \NeedsTeXFormat{LaTeX2e}
@@ -87,6 +91,7 @@
 \define@key[OIST]{title}{name1}{\def\nameA{#1}}
 \define@key[OIST]{title}{name2}{\def\nameB{#1}}
 \define@key[OIST]{title}{name3}{\def\nameC{#1}}
+\define@key[OIST]{title}{groupnumber}{\def\groupnumber{#1}}
 \define@key[OIST]{title}{academicyear}{\def\academicyear{#1}}
 
 \providecommand{\puttitle}{}
@@ -121,7 +126,8 @@
 			{\color{black} \hspace{6.3em} \Large \bfseries{\nameE}} \\
 			\\
 			\vspace{0.51cm}
-			\\ \\ \\
+			\\
+			{\color{black} \Large {Group Number:} \bfseries{\groupnumber}} \\ \\
 			\end{minipage}
 			\\
 			\vspace*{\fill}
