@@ -1,6 +1,7 @@
 CREATE INDEX index_on_movie_id FOR (m:Movie) ON m.id;
-CREATE INDEX index_on_actor FOR (a:ACTOR) ON a.name;
+CREATE INDEX index_on_actor FOR (a:Actor) ON a.name;
 CREATE INDEX index_on_crew FOR (c:Crew) ON c.name;
+CREATE INDEX crew_role_index FOR (c:Crew) ON c.role;
 CREATE INDEX index_on_languages FOR (l:Language) ON l.name;
 CREATE INDEX index_on_studio FOR (s:Studio) ON s.name;
 CREATE INDEX index_on_countries FOR (c:Country) ON c.name;

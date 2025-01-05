@@ -15,7 +15,7 @@ def replace_backslash_quotes_in_folder(input_folder, output_folder):
                with open(input_file, 'r') as infile:
                    content = infile.read()
 
-               # Replace occurrences of \" with ""
+               # Replace occurrences of \" with  and of \"" with ""
                updated_content = content.replace('\\""', '""')
                updated_content = updated_content.replace('\\"', '"')
 
